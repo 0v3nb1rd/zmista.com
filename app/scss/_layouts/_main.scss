@@ -1,0 +1,66 @@
+@import '../_components/breadcrumb';
+
+.main {
+  .breadcrumb--main {
+    margin: 40px 0 35px;
+  }
+  .details {
+    &__header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__title {
+      h1 {
+        display: inline-block;
+        font-size: 2rem;
+        margin-right: 15px;
+        margin-bottom: 12px;
+        color: $title;
+      }
+    }
+    &__desc {
+      display: block;
+    }
+    &__rait {
+      span {
+        color: $title;
+      }
+    }
+    &__price {
+      padding: 0;
+      text-align: right;
+      color: $green;
+      li:first-child {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      li + li {
+        font-size: 1.1rem;
+        font-weight: 600;
+        &::before {
+          color: rgba($green, 0.5);
+        }
+      }
+    }
+    &__nav {
+      text-align: right;
+      color: $title;
+      font-weight: 600;
+      li {
+        margin-top: 7px;
+        display: inline-block;
+        + li {
+          margin-left: 50px;
+        }
+      }
+      a {
+        display: block;
+        padding: 5px 5px 5px 5px;
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

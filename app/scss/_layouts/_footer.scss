@@ -1,0 +1,10 @@
+.footer {
+  // display: flex;
+  overflow: hidden;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 38px 0;
+  }
+}
