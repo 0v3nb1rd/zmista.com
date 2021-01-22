@@ -1,0 +1,67 @@
+.header {
+  // display: flex;
+  overflow: hidden;
+  border-bottom: 1px solid $grey;
+  &__wrap {
+    position: relative;
+    margin: 38px 0;
+  }
+  &__inner {
+    position: absolute;
+    top: 0;
+    right: -50px;
+  }
+}
+
+.mainMenu {
+  text-align: center;
+  &__itm {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  a {
+    position: relative;
+    display: block;
+    padding: 5px;
+    text-transform: capitalize;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      margin: auto;
+      background-color: $accent;
+      visibility: hidden;
+      transition: all 0.2s ease;
+    }
+    &:hover {
+      &::before {
+        visibility: visible;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.leng {
+  display: inline-block;
+  padding-right: 10px;
+  border: none;
+  outline: none;
+  color: inherit;
+}
+
+.mainSocial {
+  display: inline-block;
+  &__itm {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  a {
+    display: block;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,76 @@
+@import 'vars';
+// @import 'fonts';
+@import 'libs';
+
+::placeholder {
+  color: $text;
+}
+
+::selection {
+  background-color: $green;
+  color: $grey;
+}
+body {
+  position: relative;
+  min-width: 320px;
+  font-family: $default-font;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  overflow-x: hidden;
+  color: $text;
+  input,
+  textarea {
+    border: $grey 1px solid;
+    outline: none;
+    &:focus:required:invalid {
+      border-color: red;
+    }
+    &:required:valid {
+      border-color: green;
+    }
+  }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  &.img-width {
+    width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  color: inherit;
+  &:hover {
+    color: $title;
+    text-decoration: none;
+  }
+}
+
+.mt-gutter {
+  margin-top: $gutter;
+}
+.mb-gutter {
+  margin-bottom: $gutter;
+}
+
+@import './_layouts/header';
+@import './_layouts/main';
+@import './_layouts/footer';
+@import 'media'; // Always at the end
