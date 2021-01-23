@@ -63,11 +63,20 @@ a {
   }
 }
 
+.border-b {
+  border-bottom: 1px solid $grey;
+}
 .mt-gutter {
   margin-top: $gutter;
 }
 .mb-gutter {
   margin-bottom: $gutter;
+}
+.mr-gutter {
+  margin-right: $gutter;
+}
+.ml-gutter {
+  margin-left: $gutter;
 }
 
 @import './_layouts/header';

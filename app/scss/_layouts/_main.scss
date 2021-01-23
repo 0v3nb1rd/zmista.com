@@ -1,66 +1,46 @@
 @import '../_components/breadcrumb';
+@import './titleBlock';
+@import './galleryBlock';
+@import './paramBlock';
 
 .main {
   .breadcrumb--main {
     margin: 40px 0 35px;
   }
-  .details {
-    &__header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-    &__title {
-      h1 {
-        display: inline-block;
-        font-size: 2rem;
-        margin-right: 15px;
-        margin-bottom: 12px;
-        color: $title;
-      }
-    }
-    &__desc {
+  .details__param {
+    margin: 32px 0;
+  }
+}
+
+.facilities {
+  // height: 312px;
+  padding-top: 40px;
+  .container {
+    // height: 100%;
+  }
+  &__title {
+    margin-bottom: 25px;
+    color: $title;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: 220px;
+  }
+  &__itm {
+    display: inline-block;
+    margin-bottom: 45px;
+    margin-right: 80px;
+    color: $title;
+    i {
       display: block;
-    }
-    &__rait {
-      span {
-        color: $title;
-      }
-    }
-    &__price {
-      padding: 0;
-      text-align: right;
-      color: $green;
-      li:first-child {
-        font-size: 2rem;
-        font-weight: 700;
-      }
-      li + li {
-        font-size: 1.1rem;
-        font-weight: 600;
-        &::before {
-          color: rgba($green, 0.5);
-        }
-      }
-    }
-    &__nav {
-      text-align: right;
-      color: $title;
-      font-weight: 600;
-      li {
-        margin-top: 7px;
-        display: inline-block;
-        + li {
-          margin-left: 50px;
-        }
-      }
-      a {
-        display: block;
-        padding: 5px 5px 5px 5px;
-        i {
-          margin-right: 5px;
-        }
-      }
+      margin-bottom: 10px;
+      color: $superGray;
+      font-size: 32px;
+      // margin: 0 auto;
+      // text-align: center;
     }
   }
 }

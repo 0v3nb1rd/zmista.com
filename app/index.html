@@ -43,7 +43,7 @@
   <body>
     <!-- Custom HTML -->
 
-    <header class="header">
+    <header class="header border-b">
       <div class="container">
         <div class="header__wrap">
           <nav>
@@ -69,35 +69,39 @@
     </header>
 
     <main class="main main--accommodation">
-      <div class="container">
-        <ul class="breadcrumb breadcrumb--main">
-          <li><a href="#">Carpathians</a></li>
-          <li><a href="#">Accommodation</a></li>
-          <li><a href="#">Chornogora Guesthouse</a></li>
-          <li>Italy</li>
-        </ul>
+      <section class="main__title">
+        <div class="container">
+          <ul class="breadcrumb breadcrumb--main">
+            <li><a href="#">Carpathians</a></li>
+            <li><a href="#">Accommodation</a></li>
+            <li><a href="#">Chornogora Guesthouse</a></li>
+            <li>Italy</li>
+          </ul>
+        </div>
+      </section>
 
-        <section class="details">
-          <div class="details__header mb-gutter">
-            <div class="details__title">
+      <section class="details border-b">
+        <div class="container">
+          <div class="details__header titleBlock mb-gutter">
+            <div class="titleBlock__title">
               <h1>Chornogora Guesthouse</h1>
-              <span class="details__views">16 278 views</span>
-              <p class="details__desc">
+              <span class="titleBlock__views">16 278 views</span>
+              <p class="titleBlock__desc">
                 Vulytsya Velyka Holytsya, Mykulychyn, Ivano-Frankivsk Oblast,
                 78590
               </p>
 
-              <div class="details__rait">
+              <div class="titleBlock__rait">
                 <span><i class="fas fa-star"></i> 4.8</span> – 14 reviews
               </div>
             </div>
 
             <div class="details__info">
-              <ul class="details__price breadcrumb">
+              <ul class="titleBlock__price breadcrumb">
                 <li>4200₴</li>
                 <li>3 nights</li>
               </ul>
-              <ul class="details__nav">
+              <ul class="titleBlock__nav">
                 <li>
                   <a href="#"
                     ><i class="fas fa-location-arrow"></i> Get directions</a
@@ -109,7 +113,7 @@
               </ul>
             </div>
           </div>
-          <div class="details__galery">
+          <div class="details__galery galleryBlock">
             <div class="row">
               <div class="col">
                 <img
@@ -140,45 +144,66 @@
                       src="img/_src/Villa-Boreale-101.jpg"
                       alt="galery item"
                     />
+                    <div class="galleryBlock__more">+24 photos</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="details__param">
+          <div class="details__param paramBlock">
             <ul>
-              <li>
-                Apartment 1
-                <span>4</span>
-                <ul class="breadcrumb">
-                  <li>1400₴</li>
-                  <li>night</li>
-                </ul>
+              <li class="paramBlock__itm mr-gutter">
+                <a class="paramBlock__link" href="#">
+                  <span class="paramBlock__title">Apartment 1</span>
+                  <span class="paramBlock__count"
+                    >4 <i class="fas fa-user"></i
+                  ></span>
+                  <ul class="breadcrumb">
+                    <li>1400₴</li>
+                    <li>night</li>
+                  </ul>
+                </a>
               </li>
-              <li>
-                Apartment 2
-                <span>6</span>
-                <ul class="breadcrumb">
-                  <li>1600₴</li>
-                  <li>night</li>
-                </ul>
+              <li class="paramBlock__itm mr-gutter">
+                <a class="paramBlock__link" href="#">
+                  <span class="paramBlock__title"> Apartment 2</span>
+                  <span class="paramBlock__count">
+                    6 <i class="fas fa-user"></i
+                  ></span>
+                  <ul class="breadcrumb">
+                    <li>1600₴</li>
+                    <li>night</li>
+                  </ul>
+                </a>
               </li>
             </ul>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- <section class="facilities">
-          <h2>Facilities</h2>
-          <ul>
-            <li>WiFi</li>
-            <li>Cards accepted</li>
-            <li>Heating</li>
-            <li>Pets allowed</li>
-            <li>Restaurant</li>
-            <li>Sauna and spa</li>
+      <section class="facilities border-b">
+        <div class="container">
+          <h2 class="facilities__title">Facilities</h2>
+          <ul class="facilities__list">
+            <li class="facilities__itm"><i class="fas fa-wifi"></i> WiFi</li>
+            <li class="facilities__itm">
+              <i class="fas fa-dog"></i> Pets allowed
+            </li>
+            <li class="facilities__itm">
+              <i class="fas fa-credit-card"></i> Cards accepted
+            </li>
+            <li class="facilities__itm">
+              <i class="fas fa-utensils"></i> Restaurant
+            </li>
+            <li class="facilities__itm">
+              <i class="fas fa-hot-tub"></i> Heating
+            </li>
+            <li class="facilities__itm">
+              <i class="fas fa-hot-tub"></i> Sauna and spa
+            </li>
           </ul>
-        </section> -->
-      </div>
+        </div>
+      </section>
     </main>
 
     <!-- <footer class="footer">
