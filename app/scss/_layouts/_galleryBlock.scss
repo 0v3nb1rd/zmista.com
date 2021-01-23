@@ -1,0 +1,13 @@
+.galleryBlock {
+  &__more {
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    padding: 8px 12px;
+    color: $title;
+    background-color: $white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0.7;
+  }
+}
