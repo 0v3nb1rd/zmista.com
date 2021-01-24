@@ -1,7 +1,7 @@
 // $default-font: 'roboto-example', sans-serif;
 $default-font: 'Montserrat Alternates', sans-serif;
-// $accent: orange;
 
+$accent: #034052;
 $title: #04313f;
 $text: #627073;
 $green: #71b21d;
@@ -9,7 +9,14 @@ $blue: #3b99b5;
 $grey: #ecf3f5;
 $superGray: #a3c0c7;
 
-$accent: #034052;
+$textGrey: #547f8b;
+$lightOrange: #f5eeeb;
+$textOrange: #cb7d63;
+$lightPink: #f5ebed;
+$textPink: #a38088;
+$lightYellow: #f5f2eb;
+$textYellow: #bfad83;
+
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 20px;
 $grid-columns: 12;
@@ -18,7 +25,8 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px,
+  // xl: 1200px,
+  xl: 1260px,
 );
 $container-max-widths: (
   sm: 540px,
