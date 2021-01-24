@@ -5,10 +5,8 @@
   &__title {
     h1 {
       display: inline-block;
-      font-size: 2rem;
       margin-right: 15px;
       margin-bottom: 12px;
-      color: $title;
     }
   }
   &__desc {
@@ -20,19 +18,10 @@
     }
   }
   &__price {
-    padding: 0;
     text-align: right;
     color: $green;
-    li:first-child {
-      font-size: 2rem;
-      font-weight: 700;
-    }
-    li + li {
-      font-size: 1.1rem;
-      font-weight: 600;
-      &::before {
-        color: rgba($green, 0.5);
-      }
+    li + li::before {
+      color: rgba($green, 0.5);
     }
   }
   &__nav {

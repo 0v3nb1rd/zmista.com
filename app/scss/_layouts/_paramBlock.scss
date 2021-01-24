@@ -10,13 +10,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    // align-items: ;
     padding: 19px 24px;
     height: 100%;
-  }
-  &__title {
-    color: $title;
-    font-weight: 700;
   }
   &__count {
     display: inline-block;
@@ -24,12 +19,6 @@
     color: $superGray;
   }
   .breadcrumb {
-    color: $title;
     width: 100%;
-    padding: 0;
-    li + li::before {
-      padding: 0 8px;
-      color: rgba($title, 0.5);
-    }
   }
 }
