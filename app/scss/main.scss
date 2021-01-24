@@ -62,9 +62,37 @@ a {
     text-decoration: none;
   }
 }
-
+h1 {
+  font-size: 2rem;
+  color: $title;
+}
+h2 {
+  color: $title;
+  font-weight: 700;
+}
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: $title;
+}
+p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.form-control {
+  border-radius: 0;
+}
+.btn {
+  border-radius: 0;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
 .border-b {
   border-bottom: 1px solid $grey;
+}
+.border-t {
+  border-top: 1px solid $grey;
 }
 .mt-gutter {
   margin-top: $gutter;
@@ -78,6 +106,14 @@ a {
 .ml-gutter {
   margin-left: $gutter;
 }
+.container-840 {
+  display: inline-block;
+  max-width: 840px;
+}
+// .container-300 {
+//   display: inline-block;
+//   max-width: 300px;
+// }
 
 @import './_layouts/header';
 @import './_layouts/main';

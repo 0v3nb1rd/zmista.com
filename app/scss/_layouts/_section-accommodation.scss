@@ -1,0 +1,19 @@
+.accommodation {
+  padding: 43px 0;
+  &__title {
+    h2 {
+      margin-bottom: 13px;
+    }
+  }
+  &__subtitle {
+    h3 {
+      margin-bottom: 6px;
+    }
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__text {
+    margin-bottom: 23px;
+  }
+}

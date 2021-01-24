@@ -1,0 +1,26 @@
+.facilities {
+  padding-top: 40px;
+  &__title {
+    margin-bottom: 25px;
+    color: $title;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: 220px;
+  }
+  &__itm {
+    display: inline-block;
+    margin-bottom: 45px;
+    margin-right: 80px;
+    color: $title;
+    i {
+      display: block;
+      margin-bottom: 10px;
+      color: $superGray;
+      font-size: 32px;
+    }
+  }
+}

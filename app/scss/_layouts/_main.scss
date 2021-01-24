@@ -2,6 +2,9 @@
 @import './titleBlock';
 @import './galleryBlock';
 @import './paramBlock';
+@import './section-facilities';
+@import './section-accommodation';
+@import './section-rooms';
 
 .main {
   .breadcrumb--main {
@@ -12,35 +15,38 @@
   }
 }
 
-.facilities {
-  // height: 312px;
-  padding-top: 40px;
-  .container {
-    // height: 100%;
+.filter {
+  display: flex;
+  .form-group + .form-group {
+    margin-left: 8px;
   }
-  &__title {
-    margin-bottom: 25px;
-    color: $title;
-  }
-  &__list {
+  &__first {
     display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    flex-wrap: wrap;
-    height: 220px;
+    width: 360px;
   }
-  &__itm {
-    display: inline-block;
-    margin-bottom: 45px;
-    margin-right: 80px;
-    color: $title;
-    i {
-      display: block;
-      margin-bottom: 10px;
-      color: $superGray;
-      font-size: 32px;
-      // margin: 0 auto;
-      // text-align: center;
+  &__second {
+    display: flex;
+    margin-left: 8px;
+    align-items: flex-end;
+    flex-grow: 1;
+    .form-group {
+      width: 50%;
     }
+  }
+  label {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  input {
+    padding: 13px;
+    font-size: 0.9rem;
+    &::placeholder {
+      color: $title;
+    }
+  }
+  button {
+    padding: 13px;
+
+    height: 47px;
   }
 }

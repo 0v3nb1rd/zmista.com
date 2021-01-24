@@ -15,4 +15,28 @@
       }
     }
   }
+  &--price {
+    color: $title;
+    padding: 0;
+    li:first-child {
+      font-size: 1.9rem;
+      font-weight: 700;
+    }
+    li + li {
+      font-size: 1.1rem;
+      font-weight: 600;
+      &::before {
+        padding: 0 8px;
+        color: rgba($title, 0.5);
+      }
+    }
+  }
+  &--dark {
+    color: $title;
+    padding: 0;
+    li + li::before {
+      padding: 0 8px;
+      color: rgba($title, 0.5);
+    }
+  }
 }
