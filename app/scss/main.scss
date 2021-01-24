@@ -82,12 +82,6 @@ p {
 .form-control {
   border-radius: 0;
 }
-.btn {
-  border-radius: 0;
-  font-size: 0.9rem;
-  line-height: 1.2;
-  font-weight: 600;
-}
 .border-b {
   border-bottom: 1px solid $grey;
 }
@@ -108,7 +102,8 @@ p {
 }
 .container-840 {
   display: inline-block;
-  max-width: 840px;
+  // max-width: 840px;
+  width: 840px;
 }
 // .container-300 {
 //   display: inline-block;
