@@ -1,4 +1,9 @@
 .galleryBlock {
+  &__first {
+    .galleryBlock__more {
+      display: none;
+    }
+  }
   &__more {
     position: absolute;
     bottom: 12px;

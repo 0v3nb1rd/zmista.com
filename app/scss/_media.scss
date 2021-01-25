@@ -2,20 +2,397 @@
 
 /*==========  Desktop First  ==========*/
 
-// ≥1200px
+// ≥1260px
 @include media-breakpoint-down(lg) {
+  .pr-60 {
+    padding-right: 0;
+  }
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
+  /*--- Header ---*/
+  .header__inner {
+    right: 0;
+  }
+  .lenguiges {
+    position: relative;
+    margin-right: 10px;
+    &::before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url('../img/_src/icons/Union.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .leng {
+      padding: 0;
+      opacity: 0;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .header {
+    .mainSocial {
+      a {
+        padding: 0;
+        font-size: 0;
+      }
+      img {
+        display: block;
+        width: 20px;
+      }
+    }
+  }
+
+  .titleBlock__title h1 {
+    width: 100%;
+    margin-right: 0;
+  }
+  .titleBlock__nav li + li {
+    margin-left: 0;
+  }
+  .roomItm__img img {
+    height: auto;
+  }
+  .roomItm__about {
+    margin-left: 15px;
+  }
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+  /*--- Header ---*/
+  .logo {
+    display: block;
+    margin-left: 15px;
+    span {
+      color: $title;
+      font-weight: 500;
+      font-size: 0.9rem;
+      line-height: 20px;
+    }
+  }
+  .header__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  .header__inner {
+    position: static;
+    margin-left: auto;
+  }
+  .header__navigation {
+    order: 1;
+    margin: 20px auto 0;
+    width: 100%;
+  }
+
+  /*--- Section main__title ---*/
+  .main__title {
+    border: none;
+    .breadcrumb {
+      margin: 0;
+    }
+  }
+
+  /*--- Section details ---*/
+  .details {
+    border: 0;
+    &__galery {
+      order: -1;
+    }
+  }
+  .details__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .galleryBlock {
+    margin: 15px 0;
+    &__first {
+      .galleryBlock__more {
+        display: block;
+      }
+    }
+    &__many {
+      display: none;
+    }
+  }
+  .titleBlock {
+    flex-direction: column;
+    margin-bottom: 0;
+    &__title {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    &__views {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    &__info {
+      align-items: flex-start;
+    }
+    &__nav {
+      display: flex;
+      order: -1;
+      width: 100%;
+      padding: 20px 0;
+      justify-content: space-around;
+      border-top: 1px solid $grey;
+      border-bottom: 1px solid $grey;
+      li {
+        margin: 0;
+        + li {
+          margin-left: 0;
+        }
+      }
+    }
+    &__price {
+      padding: 20px 0;
+    }
+  }
+  .main .details__param {
+    margin: 0;
+  }
+  .breadcrumb--price li:first-child {
+    font-size: 1.2rem;
+  }
+
+  .roomItm {
+    margin-bottom: 20px;
+    + .roomItm {
+      padding-top: 0;
+      margin-bottom: 0;
+      border: 0;
+    }
+    flex-wrap: wrap;
+    &__img {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    &__about {
+      padding: 10px;
+      margin-left: 0;
+      .breadcrumb {
+        align-self: center;
+      }
+    }
+    &__guests {
+      display: none;
+    }
+    &__info {
+      margin-bottom: 15px;
+      width: 100%;
+    }
+    &__title::before {
+      bottom: 10px;
+    }
+  }
+  .facilities {
+    padding-top: 20px;
+    &__list {
+      height: 190px;
+    }
+    &__itm {
+      margin-bottom: 30px;
+    }
+  }
+  .filter {
+    flex-wrap: wrap;
+    &__first {
+      width: 100%;
+      justify-content: space-between;
+      .form-group {
+        flex-grow: 1;
+      }
+    }
+    &__second {
+      flex-wrap: wrap;
+      margin-left: 0;
+      .form-group {
+        width: 100%;
+        + .form-group {
+          margin-top: 24px;
+          margin-bottom: 24px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .progressBar {
+    flex-wrap: wrap;
+    &__group {
+      width: 100%;
+      margin-bottom: 18px;
+    }
+  }
+
+  .rait--reviews {
+    font-size: 1.2rem;
+  }
+  .reviews .btn {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  .reviewItm {
+    &__rait {
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 0;
+      width: 100%;
+      justify-content: space-between;
+    }
+    &__text {
+      margin-top: 15px;
+    }
+  }
+  .more {
+    padding: 25px 0;
+    &__titel {
+      margin-bottom: 15px;
+    }
+  }
+  .recommended {
+    padding: 25px 0;
+    &__title {
+      margin-bottom: 15px;
+    }
+  }
+  .recommendedItm__info {
+    p {
+      font-size: 12px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .footer {
+    .mainSocial a,
+    .mainMenu a {
+      font-size: 12px;
+    }
+  }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  /*--- Header ---*/
+  .mainMenu__itm {
+    margin: 0 4px;
+    a {
+      padding: 3px;
+    }
+  }
+
+  .details__galery {
+    padding: 0;
+  }
+
+  .facilities {
+    &__list {
+      justify-content: space-around;
+      align-content: space-around;
+    }
+    &__itm {
+      margin: 0;
+    }
+  }
+
+  /*--- Accomodation ---*/
+  .accommodation {
+    padding: 25px 0;
+    &__title {
+      h2 {
+        margin-bottom: 10px;
+      }
+    }
+    &__text {
+      margin-bottom: 15px;
+    }
+  }
+  .rooms {
+    padding-top: 25px;
+    .container {
+      padding: 0;
+    }
+    &__title {
+      padding: 0 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .reviews {
+    padding-top: 20px;
+    &__raitWrap {
+      flex-wrap: wrap;
+    }
+    .btn {
+      margin-bottom: 0;
+    }
+  }
+  .reviewItm__text span.moreBtn {
+    display: block;
+    margin-top: 5px;
+  }
+  .progressBar {
+    margin-bottom: 10px;
+  }
+  .filter {
+    padding: 0 10px;
+    input {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  }
+  .filter__second .form-group + .form-group {
+    margin-top: 14px;
+  }
+
+  .footer {
+    &__wrap {
+      margin: 20px 0;
+    }
+    .mainSocial__itm:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+// ≥376px
+@include media-breakpoint-down(xxs) {
+  .facilities__list {
+    height: 160px;
+    align-content: space-between;
+  }
+  .facilities__itm {
+    justify-content: center;
+    font-size: 12px;
+    img {
+      width: 23px;
+      height: 23px;
+    }
+  }
 }
 
 /*==========  Mobile First  ==========*/

@@ -10,11 +10,14 @@
   background-color: $green;
   color: $grey;
 }
+html {
+  font-size: 16px;
+}
 body {
   position: relative;
   min-width: 320px;
   font-family: $default-font;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.25;
   overflow-x: hidden;
@@ -66,6 +69,7 @@ h1 {
   font-size: 2rem;
   color: $title;
 }
+
 h2 {
   color: $title;
   font-weight: 700;
@@ -107,10 +111,14 @@ p {
 .pr-60 {
   padding-right: 60px;
 }
-// .container-300 {
-//   display: inline-block;
-//   max-width: 300px;
-// }
+
+div.over-scroll {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  .col {
+    min-width: 285px;
+  }
+}
 
 @import './_layouts/header';
 @import './_layouts/main';

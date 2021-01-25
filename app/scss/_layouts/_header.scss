@@ -8,8 +8,14 @@
   &__inner {
     position: absolute;
     top: 0;
-    right: -50px;
+    right: -25px;
+    display: flex;
+    align-items: center;
   }
+}
+
+.logo {
+  display: none;
 }
 
 .mainMenu {
@@ -22,6 +28,7 @@
     position: relative;
     display: block;
     padding: 5px;
+    font-size: 16px;
     text-transform: capitalize;
     &::before {
       content: '';
@@ -45,16 +52,20 @@
   }
 }
 
-.leng {
+.lenguiges {
   display: inline-block;
-  padding-right: 10px;
-  border: none;
-  outline: none;
-  color: inherit;
+  .leng {
+    display: inline-block;
+    padding-right: 10px;
+    border: none;
+    outline: none;
+    color: inherit;
+    cursor: pointer;
+  }
 }
 
 .mainSocial {
-  display: inline-block;
+  display: flex;
   &__itm {
     display: inline-block;
     margin: 0 10px;
@@ -62,5 +73,8 @@
   a {
     display: block;
     padding: 5px;
+  }
+  img {
+    display: none;
   }
 }

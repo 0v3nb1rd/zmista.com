@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <!-- <base href="/"> -->
@@ -42,12 +42,11 @@
   </head>
 
   <body>
-    <!-- Custom HTML -->
-
-    <header class="header border-b">
+    <header class="header">
       <div class="container">
         <div class="header__wrap">
-          <nav>
+					<div class="logo"><span>ZMISTA</span></div>
+          <nav class="header__navigation">
             <ul class="mainMenu">
               <li class="mainMenu__itm"><a href="#">Accommodation</a></li>
               <li class="mainMenu__itm"><a href="#">Services</a></li>
@@ -56,13 +55,15 @@
           </nav>
 
           <div class="header__inner">
-            <select class="leng">
-              <option lang="en" value="english" selected>En</option>
-              <option lang="uk" value="ukraine">Ua</option>
-            </select>
+						<div class="lenguiges">
+							<select class="leng">
+								<option lang="en" value="english" selected>En</option>
+								<option lang="uk" value="ukraine">Ua</option>
+							</select>
+						</div>
             <ul class="mainSocial">
-              <li class="mainSocial__itm"><a href="#">Facebook</a></li>
-              <li class="mainSocial__itm"><a href="#">Instagram</a></li>
+              <li class="mainSocial__itm"><a href="#"><img src="./img/_src/icons/facebook.svg" alt="facebook"> Facebook</a></li>
+              <li class="mainSocial__itm"><a href="#"><img src="./img/_src/icons/instagram.svg" alt="instagram"> Instagram</a></li>
             </ul>
           </div>
         </div>
@@ -70,7 +71,7 @@
     </header>
 
     <main class="main main--accommodation">
-      <section class="main__title">
+      <section class="main__title border-t">
         <div class="container">
           <ul class="breadcrumb breadcrumb--main">
             <li><a href="#">Carpathians</a></li>
@@ -82,105 +83,112 @@
       </section>
 
       <section class="details border-b">
-        <div class="container">
-          <div class="titleBlock mb-gutter">
-            <div class="titleBlock__title">
-              <h1>Chornogora Guesthouse</h1>
-              <span class="titleBlock__views">16 278 views</span>
-              <p class="titleBlock__desc">
-                Vulytsya Velyka Holytsya, Mykulychyn, Ivano-Frankivsk Oblast,
-                78590
-              </p>
+					<div class="details__wrap">
+						<div class="container">
+							<div class="titleBlock mb-gutter container">
+								<div class="titleBlock__title">
+									<h1>Chornogora Guesthouse</h1>
+									<span class="titleBlock__views">16 278 views</span>
+									<p class="titleBlock__desc">
+										Vulytsya Velyka Holytsya, Mykulychyn, Ivano-Frankivsk Oblast,
+										78590
+									</p>
 
-              <div class="titleBlock__rait rait">
-                <span><i class="fas fa-star"></i> 4.8</span> – 14 reviews
-              </div>
-            </div>
+									<div class="titleBlock__rait rait">
+										<span><i class="fas fa-star"></i> 4.8</span> – 14 reviews
+									</div>
+								</div>
 
-            <div class="details__info">
-              <ul class="titleBlock__price breadcrumb breadcrumb--price">
-                <li>4200₴</li>
-                <li>3 nights</li>
-              </ul>
-              <ul class="titleBlock__nav">
-                <li>
-                  <a href="#"></a>
-                    <img src="./img/_src/icons/path.svg" alt="wey" /> Get
-                    directions</a
-                  >
-                </li>
-                <li>
-                  <a href="#"><img src="./img/_src/icons/map.svg" alt="map"></i> Show map</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="galleryBlock">
-            <div class="row">
-              <div class="col">
-                <img
-                  class="img-responsive"
-                  src="img/_src/551.jpg"
-                  alt="galery item"
-                />
-              </div>
-              <div class="col">
-                <div class="row">
-                  <div class="col">
-                    <img
-                      class="img-responsive"
-                      src="img/_src/home-design1.jpg"
-                      alt="galery item"
-                    />
-                  </div>
-                  <div class="col">
-                    <img
-                      class="img-responsive"
-                      src="img/_src/237.jpg"
-                      alt="galery item"
-                    />
-                  </div>
-                  <div class="col-12 mt-gutter">
-                    <img
-                      class="img-responsive"
-                      src="img/_src/Villa-Boreale-101.jpg"
-                      alt="galery item"
-                    />
-                    <div class="galleryBlock__more">+24 photos</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="details__param paramBlock">
-            <ul>
-              <li class="paramBlock__itm mr-gutter">
-                <a class="paramBlock__link" href="#">
-                  <span class="paramBlock__title">Apartment 1</span>
-                  <span class="paramBlock__count"
-                    >4 <i class="fas fa-user"></i
-                  ></span>
-                  <ul class="breadcrumb breadcrumb--dark">
-                    <li>1400₴</li>
-                    <li>night</li>
-                  </ul>
-                </a>
-              </li>
-              <li class="paramBlock__itm mr-gutter">
-                <a class="paramBlock__link" href="#">
-                  <span class="paramBlock__title"> Apartment 2</span>
-                  <span class="paramBlock__count">
-                    6 <i class="fas fa-user"></i
-                  ></span>
-                  <ul class="breadcrumb breadcrumb--dark">
-                    <li>1600₴</li>
-                    <li>night</li>
-                  </ul>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+								<div class="details__info titleBlock__info">
+									<ul class="titleBlock__price breadcrumb breadcrumb--price">
+										<li>4200₴</li>
+										<li>3 nights</li>
+									</ul>
+									<ul class="titleBlock__nav">
+										<li>
+											<a href="#"></a>
+												<img src="./img/_src/icons/path.svg" alt="wey" /> Get
+												directions</a
+											>
+										</li>
+										<li>
+											<a href="#"><img src="./img/_src/icons/map.svg" alt="map"></i> Show map</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="container details__galery">
+							<div class="galleryBlock">
+								<div class="row">
+									<div class="col galleryBlock__first">
+										<img
+											class="img-responsive"
+											src="img/_src/551.jpg"
+											alt="galery item"
+										/>
+										<div class="galleryBlock__more">1 / 28</div>
+									</div>
+									<div class="col galleryBlock__many">
+										<div class="row">
+											<div class="col">
+												<img
+													class="img-responsive"
+													src="img/_src/home-design1.jpg"
+													alt="galery item"
+												/>
+											</div>
+											<div class="col">
+												<img
+													class="img-responsive"
+													src="img/_src/237.jpg"
+													alt="galery item"
+												/>
+											</div>
+											<div class="col-12 mt-gutter">
+												<img
+													class="img-responsive"
+													src="img/_src/Villa-Boreale-101.jpg"
+													alt="galery item"
+												/>
+												<div class="galleryBlock__more">+24 photos</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container">
+							<div class="details__param paramBlock">
+							<ul>
+								<li class="paramBlock__itm mr-gutter">
+									<a class="paramBlock__link" href="#">
+										<span class="paramBlock__title">Apartment 1</span>
+										<span class="paramBlock__count"
+											>4 <i class="fas fa-user"></i
+										></span>
+										<ul class="breadcrumb breadcrumb--dark">
+											<li>1400₴</li>
+											<li>night</li>
+										</ul>
+									</a>
+								</li>
+								<li class="paramBlock__itm mr-gutter">
+									<a class="paramBlock__link" href="#">
+										<span class="paramBlock__title"> Apartment 2</span>
+										<span class="paramBlock__count">
+											6 <i class="fas fa-user"></i
+										></span>
+										<ul class="breadcrumb breadcrumb--dark">
+											<li>1600₴</li>
+											<li>night</li>
+										</ul>
+									</a>
+								</li>
+							</ul>
+					</div>
+				</div>
+				</div>
       </section>
 
       <section class="facilities border-b">
@@ -210,7 +218,7 @@
       <section class="accommodation border-b">
         <div class="container">
           <div class="row">
-            <div class="col-9 pr-60">
+            <div class="col-12 col-xl-9 pr-60">
               <div class="accommodation__title">
                 <h2>Accommodation</h2>
                 <p class="accommodation__text">
@@ -252,7 +260,8 @@
                   intention out dashwoods now curiosity.
                 </p>
               </div>
-            </div>
+						</div>
+						<div class="col-md-3"></div>
           </div>
         </div>
       </section>
@@ -260,7 +269,7 @@
       <section class="rooms border-b">
         <div class="container">
           <div class="row">
-            <div class="col-9 pr-60">
+            <div class="col-12 col-xl-9 pr-60">
               <h2 class="rooms__title">Available rooms</h2>
 
               <form class="rooms__filter filter">
@@ -311,7 +320,7 @@
                     alt="room item"
                   />
                 </div>
-                <div class="roomItm__about">
+                <div class="roomItm__about ">
                   <div class="roomItm__title">
                     <h3>Apartment 1</h3>
                     <span class="roomItm__guests">4 guests</span>
@@ -348,7 +357,7 @@
                   <button class="roomItm__btn btn btn-success mb-2">
                     Book
                   </button>
-                </div>
+								</div>
               </div>
               <div class="rooms__itm roomItm border-t">
                 <div class="roomItm__img">
@@ -405,7 +414,7 @@
       <section class="reviews border-b">
         <div class="container">
           <div class="row">
-            <div class="col-9 pr-60">
+            <div class="col-12 col-xl-9 pr-60">
               <div class="reviews__title">
                 <div class="reviews__raitWrap">
                   <div class="rait rait--reviews reviews__grid">
@@ -524,7 +533,7 @@
                   sociable he carriage in speedily margaret. Up devonshire of he
                   thoroughly insensible alteration. An mr settling occasion
                   insisted distance ladyship so reason settling occasion
-                  insisted distance fdsffff ladyship...
+                  insisted distance fdf ladyship...<span class="moreBtn">Read more</span>
                 </p>
               </div>
 
@@ -558,7 +567,7 @@
       <section class="more border-b">
         <div class="container">
           <h2 class="more__titel">You may also like</h2>
-          <div class="more__wrap row">
+          <div class="more__wrap row over-scroll">
             <div class="moreItm col">
               <div class="moreItm__photo">
                 <img
@@ -658,7 +667,7 @@
       <section class="recommended border-b">
         <div class="container">
           <h2 class="recommended__title">Recommended</h2>
-          <div class="row">
+          <div class="row over-scroll">
             <div class="recommendedItm col">
               <a class="recommendedItm__wrap">
                 <div class="moreItm__photo recommendedItm__photo">
@@ -737,42 +746,6 @@
         </div>
       </div>
     </footer>
-
-    <!--! //////////////////////////////////////////////// !-->
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-8 offset-2">
-          <img
-            class="img-responsive"
-            src="img/@1x/preview.jpg"
-            srcset="img/@1x/preview.jpg 1x, img/@2x/preview.jpg 2x"
-            alt="Start HTML5 Template"
-          />
-
-          <h2>Welcome to startup HTML template OptimizedHTML 4!</h2>
-
-          <p>
-            Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing
-            elit. Ad distinctio animi, dolorum eaque praesentium unde aliquid,
-            mollitia itaque voluptate quos modi et incidunt tempora fugiat
-            voluptatum quia esse dolor repellat.
-          </p>
-          <p>
-            Nemo velit incidunt assumenda, eaque, sequi vitae facilis doloribus
-            qui totam, fuga iure dignissimos ab non praesentium. Vitae
-            similique, corrupti aliquam nam modi explicabo distinctio qui cum
-            officia ullam quam!
-          </p>
-          <p>
-            Aperiam veritatis debitis quibusdam animi totam quos mollitia
-            aspernatur porro consectetur id quod tempore numquam, ullam ex quae
-            quasi voluptatem incidunt placeat asperiores quas autem! Labore modi
-            quae nulla illo!
-          </p>
-        </div>
-      </div>
-    </div> -->
-
     <script src="js/scripts.min.js"></script>
   </body>
 </html>
