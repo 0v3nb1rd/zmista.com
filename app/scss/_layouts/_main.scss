@@ -157,6 +157,17 @@
   }
   &__text {
     margin-top: 20px;
+    // overflow: hidden;
+    // -webkit-box-orient: vertical;
+    // display: block;
+    // display: -webkit-box;
+    // text-overflow: ellipsis;
+    // -webkit-line-clamp: 3;
+    span.moreBtn {
+      display: inline-block;
+      color: $title;
+      font-weight: 600;
+    }
   }
   &__desc {
     margin-bottom: 25px;

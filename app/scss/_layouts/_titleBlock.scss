@@ -9,6 +9,11 @@
       margin-bottom: 12px;
     }
   }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
   &__desc {
     display: block;
   }
