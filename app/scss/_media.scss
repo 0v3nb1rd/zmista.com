@@ -7,6 +7,9 @@
   .pr-60 {
     padding-right: 0;
   }
+  .titleBlock__nav li + li {
+    margin-left: 25px;
+  }
 }
 
 // ≥992px
@@ -49,10 +52,18 @@
       }
     }
   }
-
-  .titleBlock__title h1 {
+  .titleBlock__info {
     width: 100%;
-    margin-right: 0;
+  }
+  .titleBlock__desc {
+    font-size: 0.9rem;
+  }
+  .titleBlock__title {
+    width: 100%;
+    h1 {
+      width: 100%;
+      margin-right: 0;
+    }
   }
   .titleBlock__nav li + li {
     margin-left: 0;
@@ -100,6 +111,9 @@
       margin: 0;
     }
   }
+  /*---- Numbrs top (noBooking)-------*/
+  .numbersTop {
+  }
 
   /*--- Section details ---*/
   .details {
@@ -108,6 +122,15 @@
       order: -1;
     }
   }
+  .numbersTop {
+    order: 0;
+    margin-top: 0;
+    padding-bottom: 20px;
+    li {
+      font-size: 0.9rem;
+    }
+  }
+
   .details__wrap {
     display: flex;
     flex-direction: column;
