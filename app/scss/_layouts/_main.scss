@@ -277,3 +277,31 @@
     }
   }
 }
+
+///////////////////////////////////////////
+
+.titleBlock {
+  flex-wrap: wrap;
+  &__title {
+    width: 60%;
+  }
+}
+.numbersTop {
+  width: 100%;
+  order: 1;
+  margin-top: 20px;
+  padding-top: 20px;
+  .breadcrumb {
+    padding: 0;
+  }
+  li {
+    font-size: 1rem;
+    color: $title;
+    &::before {
+      opacity: 0.5;
+    }
+    + li::before {
+      padding: 0 8px;
+    }
+  }
+}
