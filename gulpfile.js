@@ -59,8 +59,8 @@ gulp.task('scripts', function() {
 gulp.task('img1x', function() {
 	return gulp.src('app/img/_src/**/*.*')
 	.pipe(imageResize({ width: '50%' }))
-	// .pipe(imagemin())
-	// .pipe(gulp.dest('app/img/@1x/'))
+	.pipe(imagemin())
+	.pipe(gulp.dest('app/img/@1x/'))
 });
 gulp.task('img2x', function() {
 	return gulp.src('app/img/_src/**/*.*')
