@@ -30,11 +30,15 @@ body.modal {
   }
   &__ranges {
     padding: 20px 0;
-    .col + .col {
+    .txt + .txt {
       margin-left: 60px;
     }
   }
+  &__inputs {
+    justify-content: space-between;
+  }
   &__itm {
+    // max-width: 50%;
     max-width: 330px;
   }
   &__itm-col {
@@ -118,6 +122,7 @@ input[type='range'] {
   }
 }
 label.form-label {
+  padding-right: 40px;
   font-size: 12px;
   line-height: 20px;
 }
