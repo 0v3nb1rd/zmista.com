@@ -1,0 +1,130 @@
+body.modal {
+  background-color: #e5e5e5;
+  overflow: hidden;
+  height: 100vh;
+  z-index: 100;
+}
+.leaveReview {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 840px;
+  min-height: 733px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 60px;
+  background-color: #fff;
+  overflow-y: auto;
+  z-index: 110;
+  &__title {
+    padding-bottom: 20px;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  &__desc {
+    font-size: 16px;
+  }
+  &__ranges {
+    padding: 20px 0;
+    .col + .col {
+      margin-left: 60px;
+    }
+  }
+  &__itm {
+    max-width: 330px;
+  }
+  &__itm-col {
+    margin-top: $gutter;
+  }
+  .range-group {
+    position: relative;
+    ul {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 0;
+      li::before {
+        padding: 0 1px;
+        opacity: 0.5;
+      }
+      li + li {
+        opacity: 0.5;
+      }
+    }
+  }
+  .txt {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: $title;
+  }
+  &__btn {
+    margin-top: 25px;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  right: 60px;
+  top: 60px;
+  width: 16px;
+  height: 16px;
+  opacity: 0.3;
+  &:hover {
+    opacity: 1;
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 22px;
+    width: 2px;
+    background-color: #333;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  border: none;
+  background: $title;
+  outline: none;
+  cursor: pointer;
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background: url('../../img/_src/icons/range.svg');
+  }
+  &::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background: url('../../img/_src/icons/range.svg');
+  }
+}
+label.form-label {
+  font-size: 12px;
+  line-height: 20px;
+}
+textarea.leaveReview__textarea {
+  height: 184px;
+  color: $title;
+  resize: none;
+  font-size: 14px;
+  line-height: 20px;
+}

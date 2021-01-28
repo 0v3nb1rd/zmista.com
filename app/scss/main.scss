@@ -21,6 +21,7 @@ body {
   line-height: 1.25;
   overflow-x: hidden;
   color: $text;
+  transition: background 0.2s ease-in-out;
   input,
   textarea {
     border: $grey 1px solid;
@@ -109,6 +110,9 @@ p {
 }
 .pr-60 {
   padding-right: 60px;
+}
+.mr-60 {
+  margin-right: 60px;
 }
 
 div.over-scroll {
