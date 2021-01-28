@@ -111,7 +111,7 @@
       margin: 0;
     }
   }
-  /*---- Numbrs top (noBooking)-------*/
+  /*---- Numbrs top (noBooking) ----*/
 
   /*--- Section details ---*/
   .details {
@@ -184,7 +184,6 @@
   .breadcrumb--price li:first-child {
     font-size: 1.2rem;
   }
-
   .roomItm {
     margin-bottom: 20px;
     + .roomItm {
@@ -255,7 +254,6 @@
       margin-bottom: 18px;
     }
   }
-
   .rait--reviews {
     font-size: 1.2rem;
   }
@@ -303,6 +301,17 @@
       font-size: 12px;
     }
   }
+  .leaveReview__itm {
+    max-width: 100%;
+    + .leaveReview__itm {
+      margin-top: 18px;
+    }
+  }
+  .leaveReview__itm-col {
+    margin-top: 18px;
+  }
+
+  /*--- leaveReview (modal) ---*/
 }
 
 // ≥576px
@@ -389,7 +398,6 @@
   .filter__second .form-group + .form-group {
     margin-top: 14px;
   }
-
   .footer {
     &__wrap {
       margin: 20px 0;
@@ -397,6 +405,51 @@
     .mainSocial__itm:first-child {
       margin-left: 0;
     }
+  }
+
+  .close-btn {
+    top: 25px;
+    right: 25px;
+  }
+  .leaveReview {
+    padding: 20px;
+  }
+  .leaveReview__desc {
+    font-size: 14px;
+  }
+  .leaveReview__ranges {
+    .txt + .txt {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  label.form-label {
+    font-size: 14px;
+  }
+  .leaveReview__inputs label.form-label {
+    font-size: 12px;
+  }
+  input[type='range'] {
+    &::-webkit-slider-thumb {
+      width: 34px;
+      height: 34px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &::-moz-range-thumb {
+      width: 34px;
+      height: 34px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  .form-control {
+    padding: 11px;
+  }
+  .leaveReview__btn {
+    width: 100%;
   }
 }
 
