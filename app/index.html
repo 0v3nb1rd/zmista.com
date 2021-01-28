@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
 
-  <body class="modal">
+  <body>
     <header class="header">
       <div class="container">
         <div class="header__wrap">
@@ -439,7 +439,7 @@
                   <div class="rait rait--reviews reviews__grid">
                     <span><i class="fas fa-star"></i> 4.8</span> – 14 reviews
                   </div>
-                  <button class="btn btn-primary reviews__grid">
+                  <button id="setReview" class="btn btn-primary reviews__grid">
                     Leave review
                   </button>
                 </div>
@@ -753,119 +753,121 @@
       </section>
     </main>
 
-    <div class="leaveReview">
-      <form class="leaveReview__form">
-        <div class="leaveReview__title border-b">
-          <h2>Додати відгук</h2>
-          <span class="leaveReview__desc"
-            >Гостьовий будинок “Чорногора” – село Микуличин</span
-          >
-          <a href="#" class="close-btn"></a>
-        </div>
+    <div class="modal-review">
+      <div class="leaveReview">
+        <form class="leaveReview__form">
+          <div class="leaveReview__title border-b">
+            <h2>Додати відгук</h2>
+            <span class="leaveReview__desc"
+              >Гостьовий будинок “Чорногора” – село Микуличин</span
+            >
+            <a href="#" class="close-btn"></a>
+          </div>
 
-        <div class="row leaveReview__ranges no-gutters">
-          <div class="col-12 col-sm txt">
-            <div class="range-group">
-              <label for="range1" class="form-label">Розташування</label>
-              <ul class="breadcrumb">
-                <li>3</li>
-                <li>5</li>
-              </ul>
+          <div class="row leaveReview__ranges no-gutters">
+            <div class="col-12 col-sm txt">
+              <div class="range-group">
+                <label for="range1" class="form-label">Розташування</label>
+                <ul class="breadcrumb">
+                  <li>3</li>
+                  <li>5</li>
+                </ul>
+              </div>
+              <input
+                type="range"
+                class="form-range"
+                id="range1"
+                min="0"
+                max="5"
+                step="1"
+              />
             </div>
-            <input
-              type="range"
-              class="form-range"
-              id="range1"
-              min="0"
-              max="5"
-              step="1"
-            />
-          </div>
-          <div class="col-12 col-sm txt">
-            <div class="range-group">
-              <label for="range2" class="form-label">Чистота</label>
-              <ul class="breadcrumb">
-                <li>5</li>
-                <li>5</li>
-              </ul>
+            <div class="col-12 col-sm txt">
+              <div class="range-group">
+                <label for="range2" class="form-label">Чистота</label>
+                <ul class="breadcrumb">
+                  <li>5</li>
+                  <li>5</li>
+                </ul>
+              </div>
+              <input
+                type="range"
+                class="form-range"
+                id="range2"
+                min="0"
+                max="5"
+                step="1"
+              />
             </div>
-            <input
-              type="range"
-              class="form-range"
-              id="range2"
-              min="0"
-              max="5"
-              step="1"
-            />
-          </div>
-          <div class="col-12 col-sm txt">
-            <div class="range-group">
-              <label for="range3" class="form-label">Сервіс</label>
-              <ul class="breadcrumb">
-                <li>4</li>
-                <li>5</li>
-              </ul>
+            <div class="col-12 col-sm txt">
+              <div class="range-group">
+                <label for="range3" class="form-label">Сервіс</label>
+                <ul class="breadcrumb">
+                  <li>4</li>
+                  <li>5</li>
+                </ul>
+              </div>
+              <input
+                type="range"
+                class="form-range"
+                id="range3"
+                min="0"
+                max="5"
+                step="1"
+              />
             </div>
-            <input
-              type="range"
-              class="form-range"
-              id="range3"
-              min="0"
-              max="5"
-              step="1"
-            />
           </div>
-        </div>
 
-        <div class="row leaveReview__inputs no-gutters">
-          <div class="leaveReview__itm col-12 col-md-6">
-            <label for="inputEmail4" class="form-label">Ім'я</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail4"
-              placeholder="Ростислав"
-            />
+          <div class="row leaveReview__inputs no-gutters">
+            <div class="leaveReview__itm col-12 col-md-6">
+              <label for="inputEmail4" class="form-label">Ім'я</label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+                placeholder="Ростислав"
+              />
+            </div>
+            <div class="leaveReview__itm col-12 col-md-6">
+              <label for="inputPassword4" class="form-label"
+                >Електронна адреса</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="inputPassword4"
+                placeholder="rostyslav.ros@gmail.com"
+              />
+            </div>
+            <div class="col-12 leaveReview__itm-col">
+              <label for="inputAddress" class="form-label"
+                >Дати перебування</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="inputAddress"
+                placeholder="Чт, 17 вер 2020 – Нд, 20 вер 2020"
+              />
+            </div>
+            <div class="col-12 leaveReview__itm-col">
+              <label for="leaveReview__textarea" class="form-label"
+                >Ваш відгук</label
+              >
+              <textarea
+                class="form-control leaveReview__textarea"
+                id="leaveReview__textarea"
+                placeholder="Зупинятись на ніч при поході на Піп-Іван можна за с. Красник, що трохи далі дорогою від повороту на Ільці — там, навпроти лісопильні, є непогана галявина одразу біля ріки — рівне місце під кілька наметів, доступ до води, є місця для вогнищ та дрова."
+              ></textarea>
+            </div>
+            <div class="col-auto leaveReview__btn">
+              <button type="submit" class="btn btn-block btn-primary mb-3">
+                Додати відгук
+              </button>
+            </div>
           </div>
-          <div class="leaveReview__itm col-12 col-md-6">
-            <label for="inputPassword4" class="form-label"
-              >Електронна адреса</label
-            >
-            <input
-              type="password"
-              class="form-control"
-              id="inputPassword4"
-              placeholder="rostyslav.ros@gmail.com"
-            />
-          </div>
-          <div class="col-12 leaveReview__itm-col">
-            <label for="inputAddress" class="form-label"
-              >Дати перебування</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="inputAddress"
-              placeholder="Чт, 17 вер 2020 – Нд, 20 вер 2020"
-            />
-          </div>
-          <div class="col-12 leaveReview__itm-col">
-            <label for="leaveReview__textarea" class="form-label"
-              >Ваш відгук</label
-            >
-            <textarea
-              class="form-control leaveReview__textarea"
-              id="leaveReview__textarea"
-              placeholder="Зупинятись на ніч при поході на Піп-Іван можна за с. Красник, що трохи далі дорогою від повороту на Ільці — там, навпроти лісопильні, є непогана галявина одразу біля ріки — рівне місце під кілька наметів, доступ до води, є місця для вогнищ та дрова."
-            ></textarea>
-          </div>
-          <div class="col-auto leaveReview__btn">
-            <button type="submit" class="btn btn-block btn-primary mb-3">
-              Додати відгук
-            </button>
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
 
     <footer class="footer">
