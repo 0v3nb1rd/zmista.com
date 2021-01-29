@@ -1,5 +1,7 @@
 $(function () {
   // Custom JS
+
+  /*------------ Modal leave reviews --------------*/
   $('#setReview').click(function (e) {
     e.preventDefault();
     $('body').addClass('no-scroll');

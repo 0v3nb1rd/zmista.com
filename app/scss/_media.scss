@@ -5,7 +5,7 @@
 // ≥1260px
 @include media-breakpoint-down(lg) {
   .pr-60 {
-    padding-right: 0;
+    padding-right: 10px;
   }
   .titleBlock__nav li + li {
     margin-left: 25px;
