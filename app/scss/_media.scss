@@ -65,6 +65,9 @@
       margin-right: 0;
     }
   }
+  .titleBlock__views {
+    font-size: 0.9rem;
+  }
   .titleBlock__nav li + li {
     margin-left: 0;
   }
@@ -73,6 +76,16 @@
   }
   .roomItm__about {
     margin-left: 15px;
+  }
+
+  /*---------- 16_Services details 'page' --------------*/
+  .main--serviceDetails {
+    .titleBlock__title {
+      width: 75%;
+    }
+    .titleBlock__info {
+      width: 25%;
+    }
   }
 }
 
@@ -167,6 +180,9 @@
       justify-content: space-around;
       border-top: 1px solid $grey;
       border-bottom: 1px solid $grey;
+      a {
+        padding: 0 5px;
+      }
       li {
         margin: 0;
         + li {
@@ -311,7 +327,15 @@
     margin-top: 18px;
   }
 
-  /*--- leaveReview (modal) ---*/
+  /*---------- 16_Services details 'page' --------------*/
+  .main--serviceDetails {
+    .titleBlock__title {
+      width: 100%;
+    }
+    .titleBlock__info {
+      width: 100%;
+    }
+  }
 }
 
 // ≥576px
@@ -450,6 +474,23 @@
   }
   .leaveReview__btn {
     width: 100%;
+  }
+
+  /*---------- 16_Services details 'page' --------------*/
+  .main--serviceDetails {
+    .titleBlock__title {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .titleBlock__views {
+      position: static;
+      order: 1;
+      width: 100%;
+      margin-top: 5px;
+    }
+    .details__galery {
+      margin-bottom: 15px;
+    }
   }
 }
 

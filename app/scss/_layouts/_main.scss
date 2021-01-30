@@ -240,6 +240,7 @@
   &__wrap {
     position: relative;
     display: block;
+    cursor: pointer;
     &:hover .recommendedItm__photo {
       background-color: rgba(#3c8297, 0);
     }
@@ -278,8 +279,7 @@
   }
 }
 
-///////////////////////////////////////////
-
+/*---------- 10.1_Accomodation_no_book 'page' --------------*/
 .titleBlock {
   flex-wrap: wrap;
   &__title {
@@ -306,4 +306,49 @@
   }
 }
 
+/*---------- 11_Add review modal 'modal' --------------*/
 @import './leaveReview';
+
+/*---------- 16_Services details 'page' --------------*/
+.main--serviceDetails {
+  .titleBlock__desc {
+    margin-bottom: 0;
+  }
+  .titleBlock__info {
+    justify-content: flex-end;
+  }
+  .details__galery {
+    margin-bottom: 45px;
+  }
+  .reviewItm__text {
+    width: 100%;
+  }
+  aside.right {
+    padding: 0;
+  }
+  .rait--reviews span {
+    font-weight: 500;
+  }
+}
+.bookService {
+  width: 300px;
+  padding: 43px 25px;
+  background-color: $grey;
+  &__textarea {
+    resize: none;
+    height: 100px;
+  }
+  h2 {
+    margin-bottom: 3px;
+  }
+  .form-control {
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $title;
+  }
+  label.form-label {
+    margin-top: 12px;
+    margin-bottom: 5px;
+  }
+}
