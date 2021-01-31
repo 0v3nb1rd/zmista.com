@@ -53,13 +53,15 @@
     }
   }
   .titleBlock__info {
-    width: 100%;
+    // width: 100%;
+    width: 25%;
   }
   .titleBlock__desc {
     font-size: 0.9rem;
   }
   .titleBlock__title {
-    width: 100%;
+    // width: 100%;
+    width: 75%;
     h1 {
       width: 100%;
       margin-right: 0;
@@ -77,16 +79,6 @@
   .roomItm__about {
     margin-left: 15px;
   }
-
-  /*---------- 16_Services details 'page' --------------*/
-  .main--serviceDetails {
-    .titleBlock__title {
-      width: 75%;
-    }
-    .titleBlock__info {
-      width: 25%;
-    }
-  }
 }
 
 // ≥768px
@@ -100,6 +92,13 @@
       font-weight: 500;
       font-size: 0.9rem;
       line-height: 20px;
+    }
+  }
+  .mainMenu {
+    text-align: left;
+    a.active::before,
+    a:hover::before {
+      content: none;
     }
   }
   .header__wrap {
@@ -124,7 +123,6 @@
       margin: 0;
     }
   }
-  /*---- Numbrs top (noBooking) ----*/
 
   /*--- Section details ---*/
   .details {
@@ -163,6 +161,7 @@
     &__title {
       position: relative;
       margin-bottom: 20px;
+      width: 100%;
     }
     &__views {
       position: absolute;
@@ -171,6 +170,7 @@
     }
     &__info {
       align-items: flex-start;
+      width: 100%;
     }
     &__nav {
       display: flex;
@@ -335,6 +335,10 @@
     .titleBlock__info {
       width: 100%;
     }
+  }
+
+  /*---------- 18_Location details 'page' --------------*/
+  .main--locationDetails {
   }
 }
 

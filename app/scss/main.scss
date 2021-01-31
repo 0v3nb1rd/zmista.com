@@ -120,6 +120,12 @@ div.over-scroll {
     min-width: 285px;
   }
 }
+span.moreBtn {
+  display: inline-block;
+  color: $title;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
 
 @import './_layouts/header';
 @import './_layouts/main';
