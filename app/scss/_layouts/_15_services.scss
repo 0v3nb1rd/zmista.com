@@ -1,0 +1,83 @@
+main.masonry {
+  div.over-scroll {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+  h1 {
+    font-weight: 600;
+  }
+  .titleBlock__arrow i {
+    display: inline-block;
+    color: $title;
+    cursor: pointer;
+  }
+  .titleBlock__menu {
+    display: flex;
+    li + li {
+      margin-left: 15px;
+    }
+    a {
+      display: block;
+      padding: 8px 11px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: $text;
+      &.active {
+        color: $title;
+      }
+      &:hover {
+        color: $title;
+      }
+    }
+  }
+  .titleBlock__title {
+    width: 80%;
+  }
+  .titleBlock__info {
+    width: 20%;
+    justify-content: flex-end;
+  }
+  .titleBlock__nav .btn {
+    padding: 9px;
+    min-width: 180px;
+    text-align: center;
+  }
+  .moreItm__photo {
+    width: 285px;
+    height: 285px;
+    overflow: hidden;
+    img {
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
+  .moreItm__info {
+    h3 {
+      font-weight: 600;
+    }
+  }
+  .moreItm {
+    margin-bottom: 30px;
+  }
+
+  .servicesPagination {
+    margin-bottom: 40px;
+    .pagination {
+      justify-content: center;
+      border-radius: 0;
+      .page-item.disabled .page-link {
+        background-color: $grey;
+        border-radius: 0;
+        color: $title;
+      }
+      .page-item:last-child .page-link {
+        border: 0;
+        color: $title;
+      }
+      .page-link {
+        border: 0;
+        color: $text;
+      }
+    }
+  }
+}

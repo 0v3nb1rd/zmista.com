@@ -13,6 +13,17 @@
   .recommendedItm__info {
     padding: 12px;
   }
+
+  /*----- 15_services (masonry layout) -----*/
+  main.masonry {
+    .moreItm__subtitle {
+      width: 100%;
+    }
+    .moreItm__photo {
+      width: auto;
+      height: auto;
+    }
+  }
 }
 
 // ≥992px
@@ -82,6 +93,26 @@
   .roomItm__about {
     margin-left: 15px;
   }
+
+  /*----- 15_services (masonry layout) -----*/
+  main.masonry {
+    .titleBlock__title h1 {
+      width: auto;
+    }
+    .titleBlock__title {
+      width: 74%;
+    }
+    .titleBlock__info {
+      width: 26%;
+    }
+    .titleBlock__menu {
+      align-items: center;
+      text-align: center;
+    }
+    .moreItm__photo img {
+      min-width: 100%;
+    }
+  }
 }
 
 // ≥768px
@@ -93,7 +124,8 @@
     span {
       color: $title;
       font-weight: 500;
-      font-size: 0.9rem;
+      // font-size: 0.9rem;
+      // font-size: 1rem;
       line-height: 20px;
     }
   }
@@ -340,8 +372,44 @@
     }
   }
 
-  /*---------- 18_Location details 'page' --------------*/
-  .main--locationDetails {
+  /*----- 15_services (masonry layout) -----*/
+  main.masonry {
+    .details__galery {
+      order: 0;
+    }
+    .titleBlock {
+      flex-direction: row;
+    }
+    .titleBlock__title {
+      margin-bottom: 0;
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+    .titleBlock__nav {
+      border: none;
+      padding: 0;
+      .btn {
+        min-width: auto;
+        background-color: transparent;
+        border: none;
+        font-size: 0;
+        &:focus {
+          box-shadow: none;
+        }
+        img.map-img {
+          filter: invert(52%) sepia(92%) saturate(324%) hue-rotate(147deg)
+            brightness(85%) contrast(85%);
+        }
+      }
+    }
+    .moreItm {
+      margin-bottom: 20px;
+    }
+    .moreItm__subtitle {
+      width: auto;
+      margin-bottom: 5px;
+    }
   }
 }
 
@@ -497,6 +565,22 @@
     }
     .details__galery {
       margin-bottom: 15px;
+    }
+  }
+
+  /*----- 15_services (masonry layout) -----*/
+  main.masonry {
+    .moreItm__subtitle {
+      font-size: 0.9rem;
+    }
+    .moreItm__info h3 {
+      font-size: 1.2rem;
+    }
+    .galleryBlock {
+      margin-bottom: 0;
+    }
+    .servicesPagination {
+      margin-bottom: 20px;
     }
   }
 }
