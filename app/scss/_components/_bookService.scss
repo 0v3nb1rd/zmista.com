@@ -1,0 +1,22 @@
+.bookService {
+  width: 300px;
+  padding: 43px 25px;
+  background-color: $grey;
+  &__textarea {
+    resize: none;
+    height: 100px;
+  }
+  h2 {
+    margin-bottom: 3px;
+  }
+  .form-control {
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $title;
+  }
+  label.form-label {
+    margin-top: 12px;
+    margin-bottom: 5px;
+  }
+}

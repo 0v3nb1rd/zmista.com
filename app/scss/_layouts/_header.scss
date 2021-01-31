@@ -43,6 +43,10 @@
       visibility: hidden;
       transition: all 0.2s ease;
     }
+    &.active {
+      color: $title;
+    }
+    &.active,
     &:hover {
       &::before {
         visibility: visible;
