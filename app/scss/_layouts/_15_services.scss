@@ -13,6 +13,7 @@ main.masonry {
   }
   .titleBlock__menu {
     display: flex;
+    text-align: center;
     li + li {
       margin-left: 15px;
     }

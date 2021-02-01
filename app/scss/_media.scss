@@ -100,17 +100,31 @@
       width: auto;
     }
     .titleBlock__title {
-      width: 74%;
+      // width: 74%;
+      width: 80%;
     }
     .titleBlock__info {
-      width: 26%;
+      // width: 26%;
+      width: 20%;
     }
     .titleBlock__menu {
       align-items: center;
-      text-align: center;
+      li + li {
+        margin-left: 10px;
+      }
+    }
+    .titleBlock__nav .btn {
+      min-width: auto;
     }
     .moreItm__photo img {
       min-width: 100%;
+    }
+  }
+
+  /*----- 17_locations (masonry layout) -----*/
+  .main--locations.masonry {
+    .recommendedItm__info {
+      padding: 21px 24px;
     }
   }
 }
@@ -124,8 +138,6 @@
     span {
       color: $title;
       font-weight: 500;
-      // font-size: 0.9rem;
-      // font-size: 1rem;
       line-height: 20px;
     }
   }
@@ -409,6 +421,13 @@
     .moreItm__subtitle {
       width: auto;
       margin-bottom: 5px;
+    }
+  }
+
+  /*----- 17_locations (masonry layout) -----*/
+  .main--locations.masonry {
+    .details__galery {
+      margin-bottom: 0;
     }
   }
 }
