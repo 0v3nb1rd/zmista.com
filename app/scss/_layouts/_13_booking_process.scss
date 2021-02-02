@@ -1,0 +1,87 @@
+main.main--bookingProcess {
+  h2 {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 13px;
+  }
+  .accommodation {
+    padding: 27px 0;
+    &__subtitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3 {
+        font-size: 1rem;
+        margin-bottom: 3px;
+      }
+    }
+    &__text {
+      font-size: 1rem;
+    }
+  }
+  .changeBtn {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+  .rooms {
+    padding-top: 27px;
+    padding-bottom: 0;
+  }
+  .roomItm__guests,
+  .features {
+    font-size: 0.9em;
+  }
+  .bookForm {
+    padding-top: 27px;
+  }
+  .leaveReview__title {
+    padding-bottom: 0;
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+  .bookForm__btn {
+    margin: 60px 0;
+    .btn {
+      height: 64px;
+      font-size: 1.1rem;
+    }
+  }
+  textarea.bookForm__textarea {
+    height: 133px;
+  }
+  .cost {
+    padding: 23px 0 3px 0;
+    &__title {
+      margin-bottom: 6px;
+      margin-right: 0;
+    }
+    &__desc {
+      margin-bottom: 0;
+      font-size: 1rem;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+      &.bottom {
+        color: $title;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.paymentSystem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 106px);
+  &__text {
+    font-size: 64px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+}
