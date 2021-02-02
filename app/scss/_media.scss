@@ -397,7 +397,21 @@
     .roomItm__guests {
       display: block;
     }
+
+    //--- 13.2_Booking_process 'page' ---//
+    .bookProgress {
+      .bookForm__btn {
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+      .btn_msg {
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+    }
   }
+
   /*---------- 16_Services details 'page' --------------*/
   .main--serviceDetails {
     .titleBlock__title {
