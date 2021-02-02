@@ -374,6 +374,30 @@
     margin-top: 18px;
   }
 
+  /*---------- 13_Booking_process 'page' --------------*/
+  main.main--bookingProcess {
+    h2 {
+      margin-bottom: 4px;
+    }
+    .accommodation__subtitle {
+      flex-direction: column;
+      align-items: start;
+      li {
+        width: 100%;
+        margin-top: 17px;
+      }
+      h3 {
+        display: inline-block;
+        margin-right: 12px;
+      }
+      p {
+        display: inline-block;
+      }
+    }
+    .roomItm__guests {
+      display: block;
+    }
+  }
   /*---------- 16_Services details 'page' --------------*/
   .main--serviceDetails {
     .titleBlock__title {
@@ -570,6 +594,54 @@
     width: 100%;
   }
 
+  /*---------- 13_Booking_process 'page' --------------*/
+  main.main--bookingProcess {
+    .accommodation {
+      padding: 20px;
+    }
+
+    .rooms {
+      &__title {
+        margin-right: 0;
+      }
+      &__sub {
+        padding: 0 10px;
+      }
+    }
+    .roomItm {
+      margin-bottom: 0;
+      li {
+        line-height: 20px;
+      }
+    }
+    .changeBtn {
+      float: right;
+      text-align: right;
+      padding-right: 15px;
+    }
+    .cost__title {
+      font-weight: 700;
+    }
+    .cost__desc {
+      font-size: 12px;
+    }
+    .cost__list--first {
+      padding: 17px 0;
+      flex-direction: column;
+      li {
+        margin: 9px 0;
+      }
+    }
+  }
+
+  /*----------- 13.1_booking_process 'page' --------------*/
+  .paymentSystem {
+    &__text {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+
   /*---------- 16_Services details 'page' --------------*/
   .main--serviceDetails {
     .titleBlock__title {
@@ -618,22 +690,4 @@
       height: 23px;
     }
   }
-}
-
-/*==========  Mobile First  ==========*/
-
-// ≤576px
-@include media-breakpoint-up(sm) {
-}
-
-// ≤768px
-@include media-breakpoint-up(md) {
-}
-
-// ≤992px
-@include media-breakpoint-up(lg) {
-}
-
-// ≤1200px
-@include media-breakpoint-up(xl) {
 }
