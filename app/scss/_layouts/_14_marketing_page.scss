@@ -49,6 +49,7 @@
   }
 
   .aboutUs {
+    margin-bottom: 3em;
     &__title {
       margin-bottom: 0.3em;
     }
@@ -72,9 +73,13 @@
         margin-bottom: 0;
       }
     }
-  }
-
-  .map {
+    &__map {
+      position: relative;
+    }
+    &__pic {
+      position: absolute;
+      top: 10%;
+    }
   }
 
   .whyWe {
@@ -106,6 +111,8 @@
         margin-top: 5rem;
         img {
           position: absolute;
+          left: 0;
+          right: 0;
         }
       }
     }
