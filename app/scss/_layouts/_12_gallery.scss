@@ -1,0 +1,61 @@
+.galleryPage {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+  min-height: 100vh;
+  &__container {
+    position: relative;
+  }
+  &__wrap {
+    position: relative;
+    max-width: 960px;
+    margin: 90px auto;
+    z-index: 4;
+  }
+  &__itm {
+    opacity: 0.5;
+    picture {
+      cursor: pointer;
+    }
+    opacity: 0.5;
+    &.active {
+      opacity: 1;
+      picture {
+        cursor: auto;
+      }
+    }
+  }
+  &__nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 30px;
+  }
+  &__header {
+    position: relative;
+    text-align: center;
+  }
+  &__breadcrumb {
+    padding: 10px;
+    li {
+      font-size: 1rem;
+    }
+  }
+  &__close {
+    right: $gutter;
+    top: 10px;
+  }
+  &__arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    justify-content: space-between;
+    .page-link {
+      padding: 1.2rem 1.5rem;
+    }
+  }
+}
