@@ -14,13 +14,18 @@
   }
   &__itm {
     opacity: 0.5;
-    picture {
+    a {
+      display: block;
       cursor: pointer;
     }
-    opacity: 0.5;
+    picture {
+      display: flex;
+      height: 100%;
+      // cursor: pointer;
+    }
     &.active {
       opacity: 1;
-      picture {
+      a {
         cursor: auto;
       }
     }
@@ -41,7 +46,7 @@
   &__breadcrumb {
     padding: 10px;
     li {
-      font-size: 1rem;
+      font-size: 16px;
     }
   }
   &__close {

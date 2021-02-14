@@ -14,6 +14,11 @@
     padding: 12px;
   }
 
+  /*----- 12_gallery (layout) -----*/
+  .galleryPage__arrows {
+    display: none;
+  }
+
   /*----- 14_marketing (layout) -----*/
   .main--marketingPage .reviewBlock__text {
     margin-left: 5%;
@@ -687,6 +692,45 @@
   }
   .leaveReview__btn {
     width: 100%;
+  }
+
+  /*---------- 12_gallery 'layout' --------------*/
+  .galleryPage {
+    align-items: flex-start;
+    &.show {
+      align-items: center;
+      .galleryPage__container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+    }
+    &__container {
+      padding: 0;
+    }
+    &__wrap {
+      .row {
+        margin-left: -6px;
+        margin-right: -6px;
+        .galleryPage__itm {
+          padding-left: 6px;
+          padding-right: 6px;
+        }
+        .p-none {
+          padding: 0;
+        }
+      }
+    }
+    &__close {
+      top: 5px;
+    }
+    &__itm {
+      margin-bottom: $gutter - 8px;
+      opacity: 1;
+      &.active picture {
+        cursor: pointer;
+      }
+    }
   }
 
   /*---------- 13_Booking_process 'page' --------------*/
