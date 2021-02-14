@@ -874,8 +874,39 @@
     }
     .range__text {
       margin: 0;
-
       font-size: 18px;
+      line-height: 28px;
+    }
+    .range__wrap {
+      padding-top: 30px;
+    }
+    .range {
+      .circle {
+        text-align: center;
+        strong {
+          top: 55px;
+          font-size: 32px;
+        }
+        span {
+          margin-top: 10px;
+        }
+      }
+      .circle.circle_second {
+        margin-left: 40px;
+        strong {
+          top: 42px;
+          font-size: 24px;
+        }
+        span {
+          margin-top: 10px;
+        }
+      }
+      .circle_first {
+        width: 150px;
+      }
+      .circle_second {
+        width: 110px;
+      }
     }
     .reviewBlock__photo {
       width: 40%;
