@@ -101,13 +101,13 @@ input[type='range'] {
     width: 24px;
     height: 24px;
     border: 0;
-    background: url('../../img/_src/icons/range.svg');
+    background: url('../img/_src/icons/range.svg');
   }
   &::-moz-range-thumb {
     width: 24px;
     height: 24px;
     border: 0;
-    background: url('../../img/_src/icons/range.svg');
+    background: url('../img/_src/icons/range.svg');
   }
 }
 label.form-label {

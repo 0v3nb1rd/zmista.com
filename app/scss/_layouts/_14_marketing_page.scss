@@ -32,7 +32,7 @@
         rgba(0, 0, 0, 0.64) 0%,
         rgba(0, 0, 0, 0) 100%
       ),
-      url(../../img/_src/marketing_page/baner_bg.jpg) no-repeat center;
+      url(../img/_src/marketing_page/baner_bg.jpg) no-repeat center;
     background-size: cover;
     overflow: hidden;
     .title {
@@ -237,7 +237,7 @@
 
   .sendForm {
     padding: 60px 0;
-    background: url(../../img/_src/marketing_page/form_bg.jpg) no-repeat center;
+    background: url(../img/_src/marketing_page/form_bg.jpg) no-repeat center;
     background-size: cover;
     overflow: hidden;
     &__wrap {
